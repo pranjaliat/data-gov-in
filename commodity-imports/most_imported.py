@@ -20,7 +20,9 @@ def most_imported():
         print df.groupby(cols[0])[[col]].sum().sort([col], ascending=False).head()
 
     print "Top 5 commodities by cost of import during 2011-2012 and 2012-2013"
-
+    for col in cols[4], cols[6]:
+        print df.groupby(cols[0])[[col]].sum().sort([col], ascending=False).head()
+        
 
 if __name__ == "__main__":
     most_imported()
