@@ -22,7 +22,18 @@ def most_imported():
     print "Top 5 commodities by cost of import during 2011-2012 and 2012-2013"
     for col in cols[4], cols[6]:
         print df.groupby(cols[0])[[col]].sum().sort([col], ascending=False).head()
-        
+    
+    #The below is also possible for a quick look at both 2011-2012
+    #and 2012-2013 in a single df, but primary sort axis is 2011-2012
+    df.groupby(cols[0])[[cols[4], cols[6]]].sum().sort([cols[4], cols[6]], ascending=False)
+
+    print "Top 5 commodities by increase in expenditure"
+    df['cost_change'] = df[cols[6]] - df[cols[4]]
+    print df.groupby(cols[0])[['cost_change']].sum().sort(['cost_change'], ascending=False).head()
+    
+    print "Top 5 commodities by decrease in expenditure"
+    print df.groupby(cols[0])[['cost_change']].sum().sort(['cost_change']).head()
+     
 
 if __name__ == "__main__":
     most_imported()
