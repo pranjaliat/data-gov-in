@@ -35,3 +35,25 @@ Notes:
 * For some reason, India decreased its expenditure on Silver and Precious Perl imports drastically in comparison to the others
 
 ![Commodity vs Cost Difference](https://raw.githubusercontent.com/jargnar/data-gov-in/master/commodity-imports/plots/figure_4.png)
+
+### 5) Change in quantity of import during 2011-12 and 2012-13
+
+Notes:
+* India needed a lot more Sugar, Vegetable Oil and Spices in 2012-13 as compared to 2011-12 - We're getting fatter, aren't we? ;)
+* Petroleum seems to top all charts
+* Why did India need significantly less amount of fertilizers in 2012-13 than in 2011-12 - what does this say about farming?
+
+![Commodity vs Quantity diff](https://raw.githubusercontent.com/jargnar/data-gov-in/master/commodity-imports/plots/figure_5.png)
+
+### 6) Juxtaposing change in quantity and change in expenditure
+
+Notes:
+* Gold expenditure has significantly risen but the quantity remains same - Gold prices!
+* Does the gold-price-theory for increase in expenditure but no increase in quantity of import apply to these and others as well?
+  * Ore & Metal Scrap
+  * Organic Chemicals
+  * Electronic goods
+* Coal, Coke & Briquittes for some magical reason was imported a significant more amount in tonnes without costing anything - the same with spices - what story lies behind this?
+
+
+![Qty & Expenditure](https://raw.githubusercontent.com/jargnar/data-gov-in/master/commodity-imports/plots/figure_6.png)
